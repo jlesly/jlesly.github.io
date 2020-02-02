@@ -1,11 +1,11 @@
 # Site settings
-author: elegant-demo-8526
-title: 
+author: Lesly Juarez
+title: Lesly Writes
 header-img: img/home-bg.png
 email: leslyj2@gmail.com
-copyright_name: elegant-demo-8526
+copyright_name: Lesly Juarez
 description: > # this means to ignore newlines until "baseurl:"
-  
+  My Journey Through Flatiron School's Software Development Course
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  jlesly
