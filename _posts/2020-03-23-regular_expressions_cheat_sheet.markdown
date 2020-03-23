@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Regular Expressions Cheat Sheet  "
-date:       2020-03-23 18:26:56 +0000
+date:       2020-03-23 14:26:57 -0400
 permalink:  regular_expressions_cheat_sheet
 ---
 
@@ -12,18 +12,11 @@ My boyfriend is in the healthcare field and has taken an interest in my coding j
 
 A regular expression can be used to recognize strings that follow a specific pattern. 
 
-```
-<table>
-Sequence	Matches
-.	Any character except newline
-[xyz]	Any character listed between the brackets (x, y, and z in this example)
-[a-z]	Any character between a and z, inclusive
-[^xyz]	The opposite of [xyz]
-\d	ASCII digits (0 through 9, inclusive)
-\D	Anything except ASCII digits
-\s	ASCII spaces (space, tab, newline, carriage return, form feed)
-\S	Anything except ASCII spaces
-<\table>
-```
+
+| Column 1 | Column 2 | Column 3 |
+| --------      | --------      | --------      |
+| John     | Doe      | Male     |
+| Mary     | Smith    | Female   |
+
 
 
