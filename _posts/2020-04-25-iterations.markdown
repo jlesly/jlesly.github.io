@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Iterations "
-date:       2020-04-26 03:14:06 +0000
+title:      "Ruby Iterators"
+date:       2020-04-25 23:14:07 -0400
 permalink:  iterations
 ---
 
