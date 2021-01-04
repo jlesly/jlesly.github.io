@@ -46,4 +46,16 @@ I used the [Yelp Fusion API](https://www.yelp.com/developers/documentation/v3/ge
 
 I went back and forth to build the cli class and restaurant class by running the program using ruby bin/hungry_vegan and tacklig one error at a time. 
 
+I kept getting the following error when I ran my code: 
+![Imgur](https://i.imgur.com/YXHQVLF.png)
+
+I tried the suggested command `gem cleanup rake` and that unistalled rake 12.3.3. I then uninstalled version 12.3.2 and ran `gem cleanup rake`. To make sure that all the older versions were uninstalled I checked with `gem list rake` and only 12.3.2 was installed. The code ke
+
+![Imgur](https://i.imgur.com/R2rtPdf.png)
+
+Multiple versions of rake were still installed and the only command that worked was `rvm @global do gem uninstall rake` . I used the command `gem list rake` to get a list of all the versions of rake installed. As expected only the latest version 12.3.3 was installed and the unresolved or ambiguous specs error was gone. 
+
+![Imgur](https://i.imgur.com/D15GNrY.png)
+
+
 
