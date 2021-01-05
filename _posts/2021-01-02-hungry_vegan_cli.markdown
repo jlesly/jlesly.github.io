@@ -49,13 +49,31 @@ I went back and forth to build the cli class and restaurant class by running the
 I kept getting the following error when I ran my code: 
 ![Imgur](https://i.imgur.com/YXHQVLF.png)
 
-I tried the suggested command `gem cleanup rake` and that unistalled rake 12.3.3. I then uninstalled version 12.3.2 and ran `gem cleanup rake`. To make sure that all the older versions were uninstalled I checked with `gem list rake` and only 12.3.2 was installed. The code ke
+I tried the suggested command `gem cleanup rake` and that unistalled rake 12.3.3. I then uninstalled version 12.3.2 and ran `gem cleanup rake`. To make sure that all the older versions were uninstalled I checked with `gem list rake` and only 12.3.2 was installed. 
 
 ![Imgur](https://i.imgur.com/R2rtPdf.png)
 
 Multiple versions of rake were still installed and the only command that worked was `rvm @global do gem uninstall rake` . I used the command `gem list rake` to get a list of all the versions of rake installed. As expected only the latest version 12.3.3 was installed and the unresolved or ambiguous specs error was gone. 
 
 ![Imgur](https://i.imgur.com/D15GNrY.png)
+
+
+## Publishing the Gem
+To publish the gem followed the instructions on [Bundler: Releasing the Gem](https://bundler.io/v2.0/guides/creating_gem.html). 
+
+I ran `rake build` to build a local copy of my gem and then ran `gem install pkg/hungry_vegan-0.1.0.gem`. 
+![Imgur](https://i.imgur.com/HyJBpwQ.png)
+
+
+![Imgur](https://i.imgur.com/upjheYo.png)
+
+I then ran `rake release` to release the first version of the gem but because I had not committed the files the gem was not released. Once I committed the changes I tried the command `rake release` again and got an error because I had not updated the allowed push host in my gemspec. 
+
+![Imgur](https://i.imgur.com/faRamTW.png)
+
+After updating the url and typing in my email and password for rubygems.org I was able to pulish the gem!
+
+![Imgur](https://i.imgur.com/KUdAa7X.png)
 
 
 
